@@ -27,6 +27,32 @@ card(
         defaultValue: `secondaryColor`,
       },
       {
+        name: 'align',
+        type: `"left" | "right" | "center" | "justify"`,
+        defaultValue: 'left',
+      },
+      {
+        name: 'bold',
+        type: 'boolean',
+        defaultValue: false,
+      },
+      {
+        name: 'italic',
+        type: 'boolean',
+        defaultValue: false,
+      },
+      {
+        name: 'inline',
+        type: 'boolean',
+        defaultValue: false,
+      },
+      {
+        name: 'size',
+        type: `"xs" | "sm" | "md" | "lg" | "xl"`,
+        description: `xs: 12px, sm: 14px, md: 16px, lg: 18px, xl: 21px`,
+        defaultValue: 'md',
+      },
+      {
         name: 'color',
         type: 'string',
         required: false,
