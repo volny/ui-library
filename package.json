@@ -1,5 +1,13 @@
 {
   "private": true,
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "marked": "^0.3.17",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-live": "^1.10.1",
+    "react-router-dom": "^4.2.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
@@ -29,6 +37,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^20.0.4",
     "prettier": "1.10.2",
+    "react-scripts": "1.1.1",
     "react-test-renderer": "^16.2.0",
     "stylelint-config-prettier": "^2.1.0",
     "stylelint-config-standard": "^18.0.0",
@@ -36,7 +45,10 @@
     "stylelint": "^8.0.0"
   },
   "scripts": {
-    "test": "jest",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "format": "prettier --write \"{.babelrc,.eslintrc,**/*.{js,css,md}}\""
   },
   "jest": {
@@ -117,5 +129,10 @@
       ],
       "value-no-vendor-prefix": true
     }
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions",
+    "iOS 8"
+  ]
 }
