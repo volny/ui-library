@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styles from './index.css'
-import typography from '../typography.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './index.css';
+import typography from '../typography.css';
 
 const Text = ({
   children,
@@ -11,9 +11,9 @@ const Text = ({
   italic = false,
   size = 'md',
 }) => {
-  const Tag = inline ? 'span' : 'div'
-  return <Tag>{children}</Tag>
-}
+  const Tag = inline ? 'span' : 'div';
+  return <Tag>{children}</Tag>;
+};
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
@@ -22,6 +22,6 @@ Text.propTypes = {
   inline: PropTypes.bool,
   italic: PropTypes.bool,
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
-}
+};
 
-export default Text
+export default Text;
