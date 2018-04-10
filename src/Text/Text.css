@@ -1,4 +1,5 @@
 .paragraph {
+  composes: sansSerif from "../typography.css";
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
