@@ -21,7 +21,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        // https://github.com/webpack-contrib/css-loader#modules
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[local]'
       }
     ]
   },

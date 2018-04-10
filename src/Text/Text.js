@@ -47,7 +47,7 @@ const Text = ({
   return (
     <Tag
       className={cs}
-    >cs: {JSON.stringify(typography)}</Tag>
+    >{children}</Tag>
   )
 };
 
