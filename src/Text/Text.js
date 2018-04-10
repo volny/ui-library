@@ -11,14 +11,22 @@ import colors from '../colors.css';
 const Text = ({
   children,
   align = 'left',
-  color = 'darkGrey',
+  caption = false,
+  color = caption ? 'darkGrey70' : 'darkGrey',
   inline = false,
   italic = false,
   bold = false,
-  caption = false,
 }) => {
   const cs = cx(
-    styles.Text,
+    align === 'center' && typography.alignCenter,
+    align === 'justify' && typography.alignJustify,
+    align === 'left' && typography.alignLeft,
+    align === 'right' && typography.alignRight,
+    italic && typography.fontStyleItalic,
+    !italic && typography.fontStyleNormal,
+    bold && typography.fontWeightBold,
+    !bold && typography.fontWeightNormal,
+    caption ? styles.caption : styles.paragraph,
     color === 'darkGrey' && colors.darkGrey,
     color === 'white' && colors.white,
     color === 'green' && colors.green,
@@ -31,17 +39,7 @@ const Text = ({
     color === 'green20' && colors.green20,
     color === 'yellow' && colors.yellow,
     color === 'red' && colors.red,
-    align === 'center' && typography.alignCenter,
-    align === 'justify' && typography.alignJustify,
-    align === 'left' && typography.alignLeft,
-    align === 'right' && typography.alignRight,
-    italic && typography.fontStyleItalic,
-    !italic && typography.fontStyleNormal,
-    bold && typography.fontWeightBold,
-    !bold && typography.fontWeightNormal,
   );
-
-  console.log(cs)
 
   const Tag = inline ? 'span' : 'div';
   return (
