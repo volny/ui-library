@@ -13,9 +13,10 @@
     "build": "webpack"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
-    "react-dom": "^15.4.1 || ^16.2.0",
-    "webpack": "^2.6.1"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -45,7 +46,8 @@
     "stylelint": "^9.2.0",
     "stylelint-config-prettier": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^0.8.1",
+    "webpack": "^2.6.1"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>scripts/setupJest.js",
