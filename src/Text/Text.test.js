@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Text from '.';
+import Text from './Text';
 
 test('Text renders', () => {
   const tree = create(<Text />).toJSON();
