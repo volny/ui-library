@@ -1,5 +1,7 @@
 /* fonts */
 
+@import url("https://use.typekit.net/kcq2cys.css");
+
 .sansSerif {
   font-family: "franklin-gothic-urw-cond", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
