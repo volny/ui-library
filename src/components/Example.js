@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import * as gestalt from 'gestalt';
+import * as uiLibrary from 'ui-library'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import Card from './Card';
 import Checkerboard from './Checkerboard';
@@ -28,6 +29,7 @@ export default ({
       code={defaultCode.trim()}
       scope={{
         ...gestalt,
+        ...uiLibrary,
         ...scope,
       }}
     >
