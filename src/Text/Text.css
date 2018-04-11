@@ -1,12 +1,15 @@
-.paragraph {
-  composes: sansSerif from "../typography.css";
-  font-size: 16px;
+.Text {
+  composes: sansSerif antialiased from "../typography.css";
   font-weight: 300;
   line-height: 20px;
 }
 
+.paragraph {
+  composes: Text;
+  font-size: 16px;
+}
+
 .caption {
+  composes: Text;
   font-size: 12.8px;
-  font-weight: 300;
-  line-height: 12px;
 }

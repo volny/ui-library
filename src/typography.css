@@ -4,6 +4,12 @@
   font-family: "franklin-gothic-urw-cond", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 }
 
+.antialiased {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
 /* font weight */
 
 .fontWeightNormal {
