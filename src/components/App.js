@@ -3,7 +3,9 @@ import type { Node } from 'react';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Box, Column } from 'gestalt';
+
 import Navigation from './Navigation';
+import '../App.css'
 
 type Props = {|
   children?: Node,
