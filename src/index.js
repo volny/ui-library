@@ -1,4 +1,4 @@
-import Text from './Text/Text';
-import Link from './Link/Link';
+import Text from './Text/Text'
+import Link from './Link/Link'
 
-export { Text, Link };
+export { Text, Link }
