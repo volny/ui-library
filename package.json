@@ -27,6 +27,7 @@
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.0.0",
+    "babel-plugin-styled-components": "^1.5.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "css-loader": "^0.28.11",
