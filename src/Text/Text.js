@@ -1,12 +1,10 @@
-// @flow
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'classnames';
-
-import styles from './Text.css';
-import typography from '../typography.css';
-import colors from '../colors.css';
+import styles from './Text.css'
+import typography from '../typography.css'
+import colors from '../colors.css'
 
 const Text = ({
   children,
@@ -38,16 +36,12 @@ const Text = ({
     color === 'green30' && colors.green30,
     color === 'green20' && colors.green20,
     color === 'yellow' && colors.yellow,
-    color === 'red' && colors.red,
-  );
-
-  const Tag = inline ? 'span' : 'div';
-  return (
-    <Tag
-      className={cs}
-    >{children}</Tag>
+    color === 'red' && colors.red
   )
-};
+
+  const Tag = inline ? 'span' : 'div'
+  return <Tag className={cs}>{children}</Tag>
+}
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
@@ -70,6 +64,6 @@ Text.propTypes = {
   italic: PropTypes.bool,
   bold: PropTypes.bool,
   caption: PropTypes.bool,
-};
+}
 
-export default Text;
+export default Text
