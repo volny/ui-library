@@ -1,7 +1,8 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import cx from 'classnames'
-import styles from './Link.css'
+import styled from 'styled-components'
+
+import colors from '../colors.js'
 
 class Link extends React.Component {
   static propTypes = {
@@ -21,19 +22,23 @@ class Link extends React.Component {
 
   render() {
     const { children, inline = false, target = null, href } = this.props
-    const rel = target === 'blank' ? 'noopener noreferrer' : null
     const linkTarget = target ? `_${target}` : null
 
+    const Styled = styled.a`
+      text-decoration: underline;
+      color: ${colors.darkGrey70};
+      outline: none;
+      &:hover,
+      &:focus {
+        color: ${colors.darkGrey};
+      }
+      ${inline || 'display: block;'};
+    `
+
     return (
-      <a
-        className={cx(styles.link, inline ? '' : styles.block)}
-        href={href}
-        onClick={this.handleClick}
-        rel={rel}
-        target={linkTarget}
-      >
+      <Styled href={href} onClick={this.handleClick} target={linkTarget}>
         {children}
-      </a>
+      </Styled>
     )
   }
 }
