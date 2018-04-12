@@ -1,0 +1,15 @@
+.link {
+  composes: underline from "../typography.css";
+  composes: darkGrey70 from "../colors.css";
+  outline: none;
+}
+
+.link:hover,
+.link:focus {
+  /* composes: darkGrey from "../colors.css" */
+}
+
+/* .block { */
+/*   composes: block from "../Layout.css"; */
+/* } */
+
