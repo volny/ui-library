@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cx from 'classnames'
+import styled from 'styled-components'
 
-import styles from './Text.css'
-import typography from '../typography.css'
-import colors from '../colors.css'
+import { fontStyle } from '../typography.js'
+import colors from '../colors.js'
 
 const Text = ({
   children,
@@ -15,32 +14,18 @@ const Text = ({
   italic = false,
   bold = false,
 }) => {
-  const cs = cx(
-    align === 'center' && typography.alignCenter,
-    align === 'justify' && typography.alignJustify,
-    align === 'left' && typography.alignLeft,
-    align === 'right' && typography.alignRight,
-    italic && typography.fontStyleItalic,
-    !italic && typography.fontStyleNormal,
-    bold && typography.fontWeightBold,
-    !bold && typography.fontWeightNormal,
-    caption ? styles.caption : styles.paragraph,
-    color === 'darkGrey' && colors.darkGrey,
-    color === 'white' && colors.white,
-    color === 'green' && colors.green,
-    color === 'darkGrey70' && colors.darkGrey70,
-    color === 'darkGrey30' && colors.darkGrey30,
-    color === 'darkGrey10' && colors.darkGrey10,
-    color === 'white90' && colors.white90,
-    color === 'white30' && colors.white30,
-    color === 'green30' && colors.green30,
-    color === 'green20' && colors.green20,
-    color === 'yellow' && colors.yellow,
-    color === 'red' && colors.red
-  )
-
-  const Tag = inline ? 'span' : 'div'
-  return <Tag className={cs}>{children}</Tag>
+  const Tag = inline ? 'span' : 'p'
+  const Styled = styled(Tag)`
+    ${fontStyle}
+    color: ${color ? colors[color] : colors.darkGrey};
+    line-height: 20px;
+    text-align: ${align};
+    font-style: ${italic ? 'italic' : 'normal'}
+    font-weight: ${bold ? 'bold' : '300'}
+    font-size: ${caption ? '12.8px' : '16px'};
+    letter-spacing: ${caption ? '.5px' : 'normal'};
+  `
+  return <Styled>{children}</Styled>
 }
 
 Text.propTypes = {
