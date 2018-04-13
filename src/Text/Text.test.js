@@ -4,28 +4,21 @@ import { create } from 'react-test-renderer'
 import Text from './Text'
 
 test('Text renders', () => {
-  const tree = create(<Text />).toJSON()
+  const tree = create(<Text>Text</Text>).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('Text orange adds the orange color class', () => {
-  const tree = create(<Text color="orange" />).toJSON()
+test('Text inline creates a span instead of a p', () => {
+  const tree = create(<Text inline>Text</Text>).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('Text truncate should add a title when the children are text only', () => {
-  const tree = create(
-    <Text truncate>Shall I compare thee to a summer&#39;s day - William Shakespeare</Text>,
-  ).toJSON()
+test('Text bold creates bold text', () => {
+  const tree = create(<Text bold>Text</Text>).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('Text truncate should not add a title when the children are objects', () => {
-  const tree = create(
-    <Text truncate>
-      <div>Summer reading:</div>
-      Shall I compare thee to a summer&#39;s day - William Shakespeare
-    </Text>,
-  ).toJSON()
+test('Text green adds green color', () => {
+  const tree = create(<Text color="green">Text</Text>).toJSON()
   expect(tree).toMatchSnapshot()
 })
