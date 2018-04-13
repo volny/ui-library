@@ -65,10 +65,10 @@ card(
     name="Alignment"
     defaultCode={`
 <Box maxWidth="8em">
-<Text align="left">Left (default)</Text>
-<Text align="right">Right</Text>
-<Text align="center">Center</Text>
-<Text align="justify">Justify</Text>
+  <Text align="left">Left (default)</Text>
+  <Text align="right">Right</Text>
+  <Text align="center">Center</Text>
+  <Text align="justify">Justify</Text>
 </Box>`}
   />
 );
@@ -81,14 +81,10 @@ card(
     name="Block vs inline"
     defaultCode={`
 <Box>
-<Box marginBottom={2}>
   <Text>Some content in a default block element. (default)</Text>
-</Box>
-<Box marginBottom={2}>
   <Text inline>Inline text with the inline prop.</Text>
   {' '}
   <Text inline>More inline text.</Text>
-</Box>
 </Box>`}
   />
 );
@@ -101,19 +97,12 @@ card(
     name="Colors"
     defaultCode={`
 <Box>
-<Box marginBottom={2}>
   <Text color="darkGray">Dark Gray (default)</Text>
-</Box>
-<Box color="darkGray" marginBottom={2}>
-  <Text color="white">White</Text>
-</Box>
-<Box marginBottom={2}>
   <Text color="green">Diakrit Green</Text>
-</Box>
-
-<Box marginBottom={2}>
   <Text color="darkGrey70">Dark Grey Alpha 70</Text>
-</Box>
+  <Box color="darkGray" maxWidth="8em">
+    <Text color="white">White</Text>
+  </Box>
 </Box>`}
   />
 );
@@ -126,12 +115,8 @@ card(
     name="Caption"
     defaultCode={`
 <Box>
-<Box marginBottom={2}>
   <Text>Default Text</Text>
-</Box>
-<Box marginBottom={2}>
   <Text caption>Text Caption</Text>
-</Box>
 </Box>`}
   />
 );
@@ -145,12 +130,9 @@ card(
     name="Styles"
     defaultCode={`
 <Box>
-<Box marginBottom={2}>
   <Text bold>Bold</Text>
-</Box>
-<Box marginBottom={2}>
   <Text italic>Italic</Text>
-</Box>
+  <Text italic bold caption color="yellow">Heavily styled Text</Text>
 </Box>`}
   />
 );
