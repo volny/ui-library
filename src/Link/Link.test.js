@@ -1,6 +1,8 @@
 /* eslint-env jest */
 import React from 'react'
 import { create } from 'react-test-renderer'
+import 'jest-styled-components'
+
 import Link from './Link'
 
 test('Link creates a link tag', () => {

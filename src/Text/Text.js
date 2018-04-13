@@ -20,8 +20,8 @@ const Text = ({
     color: ${color ? colors[color] : colors.darkGrey};
     line-height: 20px;
     text-align: ${align};
-    font-style: ${italic ? 'italic' : 'normal'}
-    font-weight: ${bold ? 'bold' : '300'}
+    font-style: ${italic ? 'italic' : 'normal'};
+    font-weight: ${bold ? 'bold' : '300'};
     font-size: ${caption ? '12.8px' : '16px'};
     letter-spacing: ${caption ? '.5px' : 'normal'};
   `

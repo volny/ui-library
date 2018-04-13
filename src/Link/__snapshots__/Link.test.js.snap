@@ -1,8 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link creates a link tag 1`] = `
+.c0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: rgba(50,50,50,0.7);
+  outline: none;
+  display: block;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #373232;
+}
+
 <a
-  className="Link__Styled-cCVwFJ jaUuTr"
+  className="c0"
   href="https://example.com"
   onClick={undefined}
   target={null}
@@ -12,8 +26,22 @@ exports[`Link creates a link tag 1`] = `
 `;
 
 exports[`Link onClick prop works 1`] = `
+.c0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: rgba(50,50,50,0.7);
+  outline: none;
+  display: block;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #373232;
+}
+
 <a
-  className="Link__Styled-cCVwFJ jaUuTr"
+  className="c0"
   href={undefined}
   onClick={[Function]}
   target={null}
@@ -23,8 +51,22 @@ exports[`Link onClick prop works 1`] = `
 `;
 
 exports[`Link target blank works 1`] = `
+.c0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: rgba(50,50,50,0.7);
+  outline: none;
+  display: block;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #373232;
+}
+
 <a
-  className="Link__Styled-cCVwFJ jaUuTr"
+  className="c0"
   href="https://example.com"
   onClick={undefined}
   target="_blank"

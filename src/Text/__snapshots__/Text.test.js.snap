@@ -1,32 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text bold creates bold text 1`] = `
+.c0 {
+  font-family: 'franklin-gothic-urw-cond',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #373232;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
 <p
-  className="Text__Styled-emQfPx jnucoE"
+  className="c0"
 >
   Text
 </p>
 `;
 
 exports[`Text green adds green color 1`] = `
+.c0 {
+  font-family: 'franklin-gothic-urw-cond',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #080;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
 <p
-  className="Text__Styled-emQfPx dlMMxF"
+  className="c0"
 >
   Text
 </p>
 `;
 
 exports[`Text inline creates a span instead of a p 1`] = `
+.c0 {
+  font-family: 'franklin-gothic-urw-cond',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #373232;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
 <span
-  className="Text__Styled-emQfPx jjroNO"
+  className="c0"
 >
   Text
 </span>
 `;
 
-exports[`Text renders 1`] = `
+exports[`Text italic creates italic text 1`] = `
+.c0 {
+  font-family: 'franklin-gothic-urw-cond',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #373232;
+  line-height: 20px;
+  text-align: left;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
 <p
-  className="Text__Styled-emQfPx jjroNO"
+  className="c0"
+>
+  Text
+</p>
+`;
+
+exports[`Text renders 1`] = `
+.c0 {
+  font-family: 'franklin-gothic-urw-cond',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #373232;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
+<p
+  className="c0"
 >
   Text
 </p>
