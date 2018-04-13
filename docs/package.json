@@ -1,0 +1,133 @@
+{
+  "private": true,
+  "dependencies": {
+    "gestalt": ">0.0.0",
+    "highlight.js": "^9.12.0",
+    "marked": "^0.3.17",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-live": "^1.10.1",
+    "react-router-dom": "^4.2.2",
+    "react-svg-inline": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-webpack-loaders": "0.9.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "danger": "^3.1.7",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.0.5",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-postcss": "^2.0.2",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "0.66.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "prettier": "1.10.2",
+    "react-scripts": "1.1.1",
+    "react-test-renderer": "^16.2.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-prettier": "^2.1.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.8.0"
+  },
+  "scripts": {
+    "start": "PORT=3006 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"{.babelrc,.eslintrc,**/*.{js,css,md}}\""
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-prettier"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "color-named": [
+        "never",
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "declaration-block-no-duplicate-properties": [
+        true,
+        {
+          "ignore": [
+            "consecutive-duplicates"
+          ]
+        }
+      ],
+      "declaration-no-important": true,
+      "function-url-quotes": "always",
+      "indentation": 2,
+      "max-nesting-depth": 0,
+      "media-feature-name-no-unknown": [
+        true,
+        {
+          "ignoreMediaFeatureNames": "inverted-colors"
+        }
+      ],
+      "no-descending-specificity": true,
+      "no-duplicate-selectors": true,
+      "no-unknown-animations": true,
+      "order/properties-order": [
+        [
+          "composes"
+        ],
+        {
+          "unspecified": "bottomAlphabetical"
+        }
+      ],
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "property-no-vendor-prefix": true,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "except": [
+            "first-nested"
+          ]
+        }
+      ],
+      "selector-max-id": 0,
+      "selector-no-vendor-prefix": true,
+      "selector-pseudo-class-no-unknown": true,
+      "unit-blacklist": [
+        "em"
+      ],
+      "value-no-vendor-prefix": true
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions",
+    "iOS 8"
+  ]
+}
