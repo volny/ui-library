@@ -15,7 +15,7 @@ test('Text orange adds the orange color class', () => {
 
 test('Text truncate should add a title when the children are text only', () => {
   const tree = create(
-    <Text truncate>Shall I compare thee to a summer&#39;s day - William Shakespeare</Text>
+    <Text truncate>Shall I compare thee to a summer&#39;s day - William Shakespeare</Text>,
   ).toJSON()
   expect(tree).toMatchSnapshot()
 })
@@ -25,7 +25,7 @@ test('Text truncate should not add a title when the children are objects', () =>
     <Text truncate>
       <div>Summer reading:</div>
       Shall I compare thee to a summer&#39;s day - William Shakespeare
-    </Text>
+    </Text>,
   ).toJSON()
   expect(tree).toMatchSnapshot()
 })
