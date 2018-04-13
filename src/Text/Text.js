@@ -15,7 +15,7 @@ const Text = ({
   bold = false,
 }) => {
   const Tag = inline ? 'span' : 'p'
-  const Styled = styled(Tag)`
+  const Styled = styled[Tag]`
     ${fontStyle}
     color: ${color ? colors[color] : colors.darkGrey};
     line-height: 20px;
