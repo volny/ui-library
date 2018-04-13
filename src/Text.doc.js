@@ -136,7 +136,6 @@ card(
   />
 );
 
-
 card(
   <Example
     description="
@@ -157,4 +156,3 @@ card(
 );
 
 export default () => <CardPage cards={cards} />;
-

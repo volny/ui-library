@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { Box, Column } from 'gestalt';
 
 import Navigation from './Navigation';
-import '../App.css'
+import '../App.css';
 
 type Props = {|
   children?: Node,

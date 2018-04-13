@@ -1,7 +1,8 @@
 /* fonts */
 
 .sansSerif {
-  font-family: "FranklinGothic URW Cond", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-family: "FranklinGothic URW Cond", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
 }
 
 /* font weight */

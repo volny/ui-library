@@ -12,7 +12,7 @@ type Props = {|
 const githubSourceUrl = (component: string): string => {
   // const file = component.replace(/\s+/g, '');
   // return `https://github.com/pinterest/gestalt/blob/master/packages/gestalt/src/${file}/${file}.js`;
-  return `https://github.com/Diakrit`
+  return `https://github.com/Diakrit`;
 };
 
 export default function PageHeader({ name, description = '' }: Props) {
