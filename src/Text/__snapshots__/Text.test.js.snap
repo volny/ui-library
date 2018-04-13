@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text bold creates bold text 1`] = `
+<p
+  className="Text__Styled-emQfPx jnucoE"
+>
+  Text
+</p>
+`;
+
+exports[`Text green adds green color 1`] = `
+<p
+  className="Text__Styled-emQfPx dlMMxF"
+>
+  Text
+</p>
+`;
+
+exports[`Text inline creates a span instead of a p 1`] = `
+<span
+  className="Text__Styled-emQfPx jjroNO"
+>
+  Text
+</span>
+`;
+
+exports[`Text renders 1`] = `
+<p
+  className="Text__Styled-emQfPx jjroNO"
+>
+  Text
+</p>
+`;
