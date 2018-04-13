@@ -7,21 +7,14 @@ import colors from '../colors.js'
 class Link extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
     inline: PropTypes.bool,
     onClick: PropTypes.func,
     target: PropTypes.oneOf([null, 'self', 'blank']),
   }
 
-  handleClick(event) {
-    const { href, onClick } = this.props
-    if (onClick && href) {
-      onClick({ event })
-    }
-  }
-
   render() {
-    const { children, inline = false, target = null, href } = this.props
+    const { children, inline = false, target = null, href, onClick } = this.props
     const linkTarget = target ? `_${target}` : null
 
     const Styled = styled.a`
@@ -33,10 +26,11 @@ class Link extends React.Component {
         color: ${colors.darkGrey};
       }
       ${inline || 'display: block;'};
+      cursor: pointer;
     `
 
     return (
-      <Styled href={href} onClick={this.handleClick} target={linkTarget}>
+      <Styled href={href} onClick={onClick} target={linkTarget}>
         {children}
       </Styled>
     )
