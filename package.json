@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Diakrit User Interface Library",
   "private": true,
-  "workspaces": ["docs"],
+  "workspaces": ["docs", "lib"],
   "main": "build/index.js",
   "scripts": {
     "lint:js": "eslint .",
