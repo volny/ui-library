@@ -1,0 +1,21 @@
+{
+  "name": "ui-library",
+  "version": "0.3.0",
+  "private": true,
+  "homepage": "",
+  "main": "build/index.js",
+  "dependencies": {
+    "styled-components": "^3.2.5"
+  },
+  "peerDependencies": {
+    "react": "^15.4.1 || ^16.2.0",
+    "react-dom": "^15.4.1 || ^16.2.0"
+  },
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
