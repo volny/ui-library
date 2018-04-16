@@ -8,7 +8,6 @@ type Props = {|
   description: string,
 |}
 
-// TODO
 const githubSourceUrl = (component: string): string => {
   const file = component.replace(/\s+/g, '')
   return `https://github.com/Diakrit/ui-library/blob/master/lib/src/${file}/${file}.js`
