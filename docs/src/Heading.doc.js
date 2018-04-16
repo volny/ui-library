@@ -69,7 +69,7 @@ card(
     defaultCode={`
 <Box>
   <Heading level="2" color="darkGray">Dark Gray (default)</Heading>
-  <Heading level="4" color="green">Diakrit Green</Heading>
+  <Heading level="3" color="green">Diakrit Green</Heading>
   <Heading color="darkGrey70">Dark Grey Alpha 70</Heading>
 </Box>`}
   />
