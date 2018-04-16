@@ -1,5 +1,6 @@
 {
   "name": "ui-library-docs",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "gestalt": ">0.0.0",
