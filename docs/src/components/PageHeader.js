@@ -10,9 +10,8 @@ type Props = {|
 
 // TODO
 const githubSourceUrl = (component: string): string => {
-  // const file = component.replace(/\s+/g, '');
-  // return `https://github.com/pinterest/gestalt/blob/master/packages/gestalt/src/${file}/${file}.js`;
-  return `https://github.com/Diakrit`
+  const file = component.replace(/\s+/g, '')
+  return `https://github.com/Diakrit/ui-library/blob/master/lib/src/${file}/${file}.js`
 }
 
 export default function PageHeader({ name, description = '' }: Props) {

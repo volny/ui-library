@@ -35,7 +35,7 @@ export default function Navigation(props: Props) {
     components.map(ns => ({
       label: ns,
       value: `/${ns}`,
-    })),
+    }))
   )
   const m = window.location.hash.match(/#(\/[\w]+)/)
 

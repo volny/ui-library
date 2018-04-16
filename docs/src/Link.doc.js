@@ -17,7 +17,7 @@ card(
   <PageHeader
     name="Link"
     description="The Link component allows you to show links on the page, open them in a new window and change the color."
-  />,
+  />
 )
 
 card(
@@ -48,7 +48,7 @@ card(
       },
     ]}
     heading={false}
-  />,
+  />
 )
 
 card(
@@ -69,7 +69,7 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />,
+  />
 )
 
 card(
@@ -97,7 +97,7 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />,
+  />
 )
 
 card(
@@ -114,7 +114,7 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />,
+  />
 )
 
 export default () => <CardPage cards={cards} />

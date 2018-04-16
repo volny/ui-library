@@ -50,7 +50,7 @@ card(
       },
     ]}
     heading={false}
-  />,
+  />
 )
 
 card(
@@ -66,7 +66,7 @@ card(
   <Text align="center">Center</Text>
   <Text align="justify">Justify</Text>
 </Box>`}
-  />,
+  />
 )
 
 card(
@@ -82,7 +82,7 @@ card(
   {' '}
   <Text inline>More inline text.</Text>
 </Box>`}
-  />,
+  />
 )
 
 card(
@@ -100,7 +100,7 @@ card(
     <Text color="white">White</Text>
   </Box>
 </Box>`}
-  />,
+  />
 )
 
 card(
@@ -114,7 +114,7 @@ card(
   <Text>Default Text</Text>
   <Text caption>Text Caption</Text>
 </Box>`}
-  />,
+  />
 )
 
 card(
@@ -130,7 +130,7 @@ card(
   <Text italic>Italic</Text>
   <Text italic bold caption color="yellow">Heavily styled Text</Text>
 </Box>`}
-  />,
+  />
 )
 
 export default () => <CardPage cards={cards} />

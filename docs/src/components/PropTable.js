@@ -72,7 +72,7 @@ export default function PropTable({ props: properties, Component }: Props) {
     if (missingProps.length > 0) {
       // eslint-disable-next-line no-console
       console.warn(
-        `${displayName} is missing ${missingProps.length} PropTable definitions ${missingProps.join(', ')}`,
+        `${displayName} is missing ${missingProps.length} PropTable definitions ${missingProps.join(', ')}`
       )
     }
   }
@@ -141,7 +141,7 @@ export default function PropTable({ props: properties, Component }: Props) {
                     >
                       {defaultValue != null ? <code>{JSON.stringify(defaultValue)}</code> : '-'}
                     </Td>
-                  </tr>,
+                  </tr>
                 )
                 if (description) {
                   acc.push(
@@ -150,12 +150,12 @@ export default function PropTable({ props: properties, Component }: Props) {
                       <Td colspan={2} overflow="normal" color="gray">
                         {description}
                       </Td>
-                    </tr>,
+                    </tr>
                   )
                 }
                 return acc
               },
-              [],
+              []
             )
           ) : (
             <tr>

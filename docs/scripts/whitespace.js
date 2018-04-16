@@ -30,7 +30,7 @@ const Ruleset = ({ selector, declarations }) =>
   `${selector} ${block(
     Object.keys(declarations)
       .reduce((arr, property) => arr.concat(Declaration({ property, value: declarations[property] })), [])
-      .join('\n'),
+      .join('\n')
   )}`
 
 const AtRule = ({ query, rulesets }) => `@media (${query}) ${block(rulesets.map(Ruleset).join('\n\n'))}`
@@ -114,7 +114,7 @@ console.log(
       SCALE.reduce((arr, i) => arr.concat(rules(i)), []),
       atrule('--sm', SCALE.reduce((arr, i) => arr.concat(rules(i, 'sm')), [])),
       atrule('--md', SCALE.reduce((arr, i) => arr.concat(rules(i, 'md')), [])),
-      atrule('--lg', SCALE.reduce((arr, i) => arr.concat(rules(i, 'lg')), [])),
-    ),
-  ),
+      atrule('--lg', SCALE.reduce((arr, i) => arr.concat(rules(i, 'lg')), []))
+    )
+  )
 )

@@ -43,7 +43,7 @@ console.log(
       SCALE.reduce((arr, i) => arr.concat(rules(i)), []),
       atrule('--sm', SCALE.reduce((arr, i) => arr.concat(rules(i, 'sm')), [])),
       atrule('--md', SCALE.reduce((arr, i) => arr.concat(rules(i, 'md')), [])),
-      atrule('--lg', SCALE.reduce((arr, i) => arr.concat(rules(i, 'lg')), [])),
-    ),
-  ),
+      atrule('--lg', SCALE.reduce((arr, i) => arr.concat(rules(i, 'lg')), []))
+    )
+  )
 )

@@ -18,7 +18,7 @@ const Ruleset = ({ selector, declarations = [] }) =>
   `${selector} ${Block(
     declarations
       .reduce((arr, [property, value]) => arr.concat(Declaration({ property, value })), [])
-      .join('\n'),
+      .join('\n')
   )}`
 
 const AtRule = ({ query, rulesets }) => `@media (${query}) ${Block(rulesets.map(Ruleset).join('\n\n'))}`
