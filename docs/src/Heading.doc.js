@@ -39,7 +39,11 @@ card(
     name="Text styling"
     defaultCode={`
 <Box>
+  <Heading level="1">Some Heading</Heading>
+  <Heading level="2">Some Heading</Heading>
   <Heading level="3">Some Heading</Heading>
+  <Heading level="4">Some Heading</Heading>
+  <Heading level="5">Some Heading</Heading>
 </Box>
 `}
     scope={{ Box, Heading }}
