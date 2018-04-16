@@ -1,19 +1,14 @@
 // @flow
-import * as React from 'react';
-import PropTable from './components/PropTable';
-import Example from './components/Example';
-import PageHeader from './components/PageHeader';
-import CardPage from './components/CardPage';
+import * as React from 'react'
+import PropTable from './components/PropTable'
+import Example from './components/Example'
+import PageHeader from './components/PageHeader'
+import CardPage from './components/CardPage'
 
-const cards = [];
-const card = c => cards.push(c);
+const cards = []
+const card = c => cards.push(c)
 
-card(
-  <PageHeader
-    name="Text"
-    description="Should be used for all text paragraphs on all pages"
-  />
-);
+card(<PageHeader name="Text" description="Should be used for all text paragraphs on all pages" />)
 
 card(
   <PropTable
@@ -55,8 +50,8 @@ card(
       },
     ]}
     heading={false}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -71,8 +66,8 @@ card(
   <Text align="center">Center</Text>
   <Text align="justify">Justify</Text>
 </Box>`}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -87,8 +82,8 @@ card(
   {' '}
   <Text inline>More inline text.</Text>
 </Box>`}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -105,8 +100,8 @@ card(
     <Text color="white">White</Text>
   </Box>
 </Box>`}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -119,8 +114,8 @@ card(
   <Text>Default Text</Text>
   <Text caption>Text Caption</Text>
 </Box>`}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -135,7 +130,7 @@ card(
   <Text italic>Italic</Text>
   <Text italic bold caption color="yellow">Heavily styled Text</Text>
 </Box>`}
-  />
-);
+  />,
+)
 
-export default () => <CardPage cards={cards} />;
+export default () => <CardPage cards={cards} />

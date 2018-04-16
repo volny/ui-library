@@ -1,10 +1,10 @@
 // @flow
-import React from 'react';
-import * as gestalt from 'gestalt';
-import * as uiLibrary from 'ui-library';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import Card from './Card';
-import Checkerboard from './Checkerboard';
+import React from 'react'
+import * as gestalt from 'gestalt'
+import * as uiLibrary from 'ui-library'
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
+import Card from './Card'
+import Checkerboard from './Checkerboard'
 
 type Props = {|
   defaultCode: string,
@@ -13,17 +13,11 @@ type Props = {|
   scope: Object,
   stacked: boolean,
   stacked?: boolean,
-|};
+|}
 
-const { Box, Text } = gestalt;
+const { Box, Text } = gestalt
 
-export default ({
-  defaultCode,
-  description = '',
-  name,
-  scope,
-  stacked = false,
-}: Props) => (
+export default ({ defaultCode, description = '', name, scope, stacked = false }: Props) => (
   <Card name={name} description={description} stacked={stacked}>
     <LiveProvider
       code={defaultCode.trim()}
@@ -56,13 +50,7 @@ export default ({
           </Box>
 
           <Box column={12} mdColumn={stacked ? 12 : 6}>
-            <Box
-              paddingX={2}
-              display="flex"
-              direction="column"
-              alignItems="stretch"
-              height="100%"
-            >
+            <Box paddingX={2} display="flex" direction="column" alignItems="stretch" height="100%">
               <Box paddingY={2}>
                 <Text size="sm" color="gray">
                   Preview
@@ -88,4 +76,4 @@ export default ({
       </Box>
     </LiveProvider>
   </Card>
-);
+)

@@ -1,10 +1,10 @@
 // @flow
-import * as React from 'react';
-import { Box } from 'gestalt';
+import * as React from 'react'
+import { Box } from 'gestalt'
 
 type Props = {|
   cards: Array<React.Node>,
-|};
+|}
 
 const CardPage = ({ cards }: Props) => (
   <Box>
@@ -14,6 +14,6 @@ const CardPage = ({ cards }: Props) => (
       </Box>
     ))}
   </Box>
-);
+)
 
-export default CardPage;
+export default CardPage

@@ -8,11 +8,11 @@ Usage:
     $ babel-node ./boxperf.js
 
 */
-import { Box as PublishedBox } from 'gestalt';
-import { Box as DevelopmentBox } from '../dist/gestalt.es.js';
-import Benchmark from 'benchmark';
+import { Box as PublishedBox } from 'gestalt'
+import { Box as DevelopmentBox } from '../dist/gestalt.es.js'
+import Benchmark from 'benchmark'
 
-const emptyProps = {};
+const emptyProps = {}
 const lotsOfProps = {
   xs: { display: 'flex' },
   alignItems: 'center',
@@ -23,37 +23,37 @@ const lotsOfProps = {
   bottom: true,
   left: true,
   right: true,
-};
+}
 
-const emptyPropsSuite = new Benchmark.Suite();
-const lotsOfPropsSuite = new Benchmark.Suite();
+const emptyPropsSuite = new Benchmark.Suite()
+const lotsOfPropsSuite = new Benchmark.Suite()
 
 emptyPropsSuite
   .add('Published Box', () => {
-    PublishedBox(emptyProps);
+    PublishedBox(emptyProps)
   })
   .add('Development Box', () => {
-    DevelopmentBox(emptyProps);
+    DevelopmentBox(emptyProps)
   })
   .on('cycle', event => {
-    console.log(String(event.target));
+    console.log(String(event.target))
   })
   .on('complete', function complete() {
-    console.log(`Fastest is ${this.filter('fastest').map('name')}`);
+    console.log(`Fastest is ${this.filter('fastest').map('name')}`)
   })
-  .run();
+  .run()
 
 lotsOfPropsSuite
   .add('Published Box w/ lots of props', () => {
-    PublishedBox(lotsOfProps);
+    PublishedBox(lotsOfProps)
   })
   .add('Development Box w/ lots of props', () => {
-    DevelopmentBox(lotsOfProps);
+    DevelopmentBox(lotsOfProps)
   })
   .on('cycle', event => {
-    console.log(String(event.target));
+    console.log(String(event.target))
   })
   .on('complete', function complete() {
-    console.log(`Fastest is ${this.filter('fastest').map('name')}`);
+    console.log(`Fastest is ${this.filter('fastest').map('name')}`)
   })
-  .run();
+  .run()

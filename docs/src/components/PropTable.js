@@ -1,7 +1,7 @@
 // @flow
-import type { Node } from 'react';
-import React from 'react';
-import { Box, Text, Icon } from 'gestalt';
+import type { Node } from 'react'
+import React from 'react'
+import { Box, Text, Icon } from 'gestalt'
 
 type Props = {|
   props: Array<{|
@@ -13,7 +13,7 @@ type Props = {|
     type: string,
   |}>,
   Component: { displayName: string, propTypes: any },
-|};
+|}
 
 const Th = ({ children }: {| children?: Node |}) => (
   <th style={{ borderBottom: '2px solid #EFEFEF' }}>
@@ -23,7 +23,7 @@ const Th = ({ children }: {| children?: Node |}) => (
       </Text>
     </Box>
   </th>
-);
+)
 
 const Td = ({
   border = true,
@@ -53,29 +53,27 @@ const Td = ({
       </Text>
     </Box>
   </td>
-);
+)
 
-const upcase = string => string.charAt(0).toUpperCase() + string.slice(1);
-const sortBy = (list, fn) => list.sort((a, b) => fn(a).localeCompare(fn(b)));
+const upcase = string => string.charAt(0).toUpperCase() + string.slice(1)
+const sortBy = (list, fn) => list.sort((a, b) => fn(a).localeCompare(fn(b)))
 
 export default function PropTable({ props: properties, Component }: Props) {
-  const hasRequired = properties.some(prop => prop.required);
+  const hasRequired = properties.some(prop => prop.required)
 
   if (process.env.NODE_ENV === 'dev' && Component) {
-    const { displayName, propTypes } = Component;
+    const { displayName, propTypes } = Component
     const missingProps = Object.keys(propTypes || {}).reduce((acc, prop) => {
       if (!properties.find(p => p.name === prop)) {
-        return acc.concat(prop);
+        return acc.concat(prop)
       }
-      return acc;
-    }, []);
+      return acc
+    }, [])
     if (missingProps.length > 0) {
       // eslint-disable-next-line no-console
       console.warn(
-        `${displayName} is missing ${
-          missingProps.length
-        } PropTable definitions ${missingProps.join(', ')}`
-      );
+        `${displayName} is missing ${missingProps.length} PropTable definitions ${missingProps.join(', ')}`,
+      )
     }
   }
 
@@ -98,15 +96,8 @@ export default function PropTable({ props: properties, Component }: Props) {
         </thead>
         <tbody>
           {properties.length > 0 ? (
-            sortBy(
-              properties,
-              ({ required, name }) => `${required ? 'a' : 'b'}${name}`
-            ).reduce(
-              (
-                acc,
-                { required, name, responsive, type, defaultValue, description },
-                i
-              ) => {
+            sortBy(properties, ({ required, name }) => `${required ? 'a' : 'b'}${name}`).reduce(
+              (acc, { required, name, responsive, type, defaultValue, description }, i) => {
                 acc.push(
                   <tr key={i}>
                     {hasRequired && (
@@ -133,9 +124,7 @@ export default function PropTable({ props: properties, Component }: Props) {
                         <Box>
                           <Text leading="tall">
                             <code>
-                              sm{upcase(name)}, md{upcase(name)}, lg{upcase(
-                                name
-                              )}
+                              sm{upcase(name)}, md{upcase(name)}, lg{upcase(name)}
                             </code>
                           </Text>
                         </Box>
@@ -150,14 +139,10 @@ export default function PropTable({ props: properties, Component }: Props) {
                       color={defaultValue != null ? 'darkGray' : 'gray'}
                       border={!description}
                     >
-                      {defaultValue != null ? (
-                        <code>{JSON.stringify(defaultValue)}</code>
-                      ) : (
-                        '-'
-                      )}
+                      {defaultValue != null ? <code>{JSON.stringify(defaultValue)}</code> : '-'}
                     </Td>
-                  </tr>
-                );
+                  </tr>,
+                )
                 if (description) {
                   acc.push(
                     <tr key={`${i}-description`}>
@@ -165,12 +150,12 @@ export default function PropTable({ props: properties, Component }: Props) {
                       <Td colspan={2} overflow="normal" color="gray">
                         {description}
                       </Td>
-                    </tr>
-                  );
+                    </tr>,
+                  )
                 }
-                return acc;
+                return acc
               },
-              []
+              [],
             )
           ) : (
             <tr>
@@ -182,5 +167,5 @@ export default function PropTable({ props: properties, Component }: Props) {
         </tbody>
       </table>
     </Box>
-  );
+  )
 }

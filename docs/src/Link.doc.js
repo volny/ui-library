@@ -1,24 +1,24 @@
 // @flow
 
-import * as React from 'react';
+import * as React from 'react'
 
-import { Box } from 'gestalt';
-import { Link, Text } from 'ui-library';
+import { Box } from 'gestalt'
+import { Link, Text } from 'ui-library'
 
-import PropTable from './components/PropTable';
-import Example from './components/Example';
-import PageHeader from './components/PageHeader';
-import CardPage from './components/CardPage';
+import PropTable from './components/PropTable'
+import Example from './components/Example'
+import PageHeader from './components/PageHeader'
+import CardPage from './components/CardPage'
 
-const cards = [];
-const card = c => cards.push(c);
+const cards = []
+const card = c => cards.push(c)
 
 card(
   <PageHeader
     name="Link"
     description="The Link component allows you to show links on the page, open them in a new window and change the color."
-  />
-);
+  />,
+)
 
 card(
   <PropTable
@@ -48,8 +48,8 @@ card(
       },
     ]}
     heading={false}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -69,8 +69,8 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -97,8 +97,8 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />
-);
+  />,
+)
 
 card(
   <Example
@@ -114,7 +114,7 @@ card(
 </Box>
 `}
     scope={{ Box, Link, Text }}
-  />
-);
+  />,
+)
 
-export default () => <CardPage cards={cards} />;
+export default () => <CardPage cards={cards} />
