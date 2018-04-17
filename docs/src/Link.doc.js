@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 import { Box } from 'gestalt'
-import { Link, Text } from 'ui-library'
+import { Link, Text } from 'lib'
 
 import PropTable from './components/PropTable'
 import Example from './components/Example'
