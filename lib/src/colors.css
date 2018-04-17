@@ -5,13 +5,13 @@
   --green: #080;
 
   /* secondary colors */
-  --darkGrey70: rgba(50,50,50,0.7);
-  --darkGrey30: rgba(50,50,50,0.3);
-  --darkGrey10: rgba(50,50,50,0.1);
-  --white90: rgba(255,255,255,0.9);
-  --white30: rgba(255,255,255,0.3);
-  --green30: rgba(0,136,0,0.3);
-  --green20: rgba(0,136,0,0.2);
+  --darkGrey70: rgba(50, 50, 50, 0.7);
+  --darkGrey30: rgba(50, 50, 50, 0.3);
+  --darkGrey10: rgba(50, 50, 50, 0.1);
+  --white90: rgba(255, 255, 255, 0.9);
+  --white30: rgba(255, 255, 255, 0.3);
+  --green30: rgba(0, 136, 0, 0.3);
+  --green20: rgba(0, 136, 0, 0.2);
   --yellow: #f8d51c;
   --red: #bf5353;
 }
@@ -19,100 +19,99 @@
 /** PRIMARY COLORS **/
 
 .darkGrey {
-  color: var(--darkGrey)
+  color: var(--darkGrey);
 }
 
 .darkGreyBg {
-  background-color: var(--darkGrey)
+  background-color: var(--darkGrey);
 }
 
 .white {
-  color: var(--white)
+  color: var(--white);
 }
 
 .whiteBg {
-  background-color: var(--white)
+  background-color: var(--white);
 }
 
 .green {
-  color: var(--green)
+  color: var(--green);
 }
 
 .greenBg {
-  background-color: var(--green)
+  background-color: var(--green);
 }
 
 /** SECONDARY COLORS **/
 
 .darkGrey70 {
-  color: var(--darkGrey70)
+  color: var(--darkGrey70);
 }
 
 .darkGrey70Bg {
-  background-color: var(--darkGrey70)
+  background-color: var(--darkGrey70);
 }
 
 .darkGrey30 {
-  color: var(--darkGrey30)
+  color: var(--darkGrey30);
 }
 
 .darkGrey30Bg {
-  background-color: var(--darkGrey30)
+  background-color: var(--darkGrey30);
 }
 
 .darkGrey10 {
-  color: var(--darkGrey10)
+  color: var(--darkGrey10);
 }
 
 .darkGrey10Bg {
-  background-color: var(--darkGrey10)
+  background-color: var(--darkGrey10);
 }
 
 .white90 {
-  color: var(--white90)
+  color: var(--white90);
 }
 
 .white90Bg {
-  background-color: var(--white90)
+  background-color: var(--white90);
 }
 
 .white30 {
-  color: var(--white30)
+  color: var(--white30);
 }
 
 .white30Bg {
-  background-color: var(--white30)
+  background-color: var(--white30);
 }
 
 .green30 {
-  color: var(--green30)
+  color: var(--green30);
 }
 
 .green30Bg {
-  background-color: var(--green30)
+  background-color: var(--green30);
 }
 
 .green20 {
-  color: var(--green20)
+  color: var(--green20);
 }
 
 .green20Bg {
-  background-color: var(--green20)
+  background-color: var(--green20);
 }
 
-
-.yello {
-  color: var(--yello)
+.yellow {
+  color: var(--yellow);
 }
 
-.yelloBg {
-  background-color: var(--yello)
+.yellowBg {
+  background-color: var(--yellow);
 }
 
 .red {
-  color: var(--red)
+  color: var(--red);
 }
 
 .redBg {
-  background-color: var(--red)
+  background-color: var(--red);
 }

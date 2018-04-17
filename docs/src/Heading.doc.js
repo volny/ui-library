@@ -13,12 +13,7 @@ import CardPage from './components/CardPage'
 const cards = []
 const card = c => cards.push(c)
 
-card(
-  <PageHeader
-    name="Heading"
-    description="To create different level headings"
-  />
-)
+card(<PageHeader name="Heading" description="To create different level headings" />)
 
 card(
   <PropTable
@@ -76,4 +71,3 @@ card(
 )
 
 export default () => <CardPage cards={cards} />
-

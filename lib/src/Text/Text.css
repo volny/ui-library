@@ -1,6 +1,6 @@
 .Text {
   composes: sansSerif antialiased from "../typography.css";
-  font-weight: 300;
+  composes: fontWeightNormal from "../typography.css";
   line-height: 20px;
 }
 

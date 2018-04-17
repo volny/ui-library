@@ -3,7 +3,7 @@
  * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
  * @author Joe Gibson (@gibsjose)
  */
-
+/* stylelint-disable */
 pre,
 code {
   font-family: PragmataPro, "Roboto Mono", Monaco, Consolas, "Courier New", Courier, monospace !important;
@@ -148,3 +148,4 @@ pre.prism-code {
 .token.entity {
   cursor: help;
 }
+/* stylelint-enable */
