@@ -1,42 +1,25 @@
-// @flow
 import * as React from 'react'
 import PropTable from './components/PropTable'
 import Example from './components/Example'
 import PageHeader from './components/PageHeader'
 import CardPage from './components/CardPage'
 
+import { Box } from 'gestalt'
+import { Button } from 'lib'
+
+
 const cards = []
 const card = c => cards.push(c)
 
-card(<PageHeader name="Text" description="Should be used for all text paragraphs on all pages" />)
+card(<PageHeader name="Button" description="It's a " />)
 
 card(
   <PropTable
     props={[
       {
-        name: 'align',
-        type: `"left" | "right" | "center" | "justify"`,
-        defaultValue: 'left',
-      },
-      {
-        name: 'bold',
+        name: 'disabled',
         type: 'boolean',
         defaultValue: false,
-      },
-      {
-        name: 'caption',
-        type: 'boolean',
-        defaultValue: false,
-      },
-      {
-        name: 'children',
-        type: 'string | \'React.Node\'',
-        required: true,
-      },
-      {
-        name: 'color',
-        type: `'darkGrey' | 'white' | 'green' | 'darkGrey70' | 'darkGrey30 | 'darkGrey10' | 'white90' | 'white30' | 'green30' | 'green20' | 'yellow' | 'red'`,
-        defaultValue: 'darkGray',
       },
       {
         name: 'inline',
@@ -44,9 +27,18 @@ card(
         defaultValue: false,
       },
       {
-        name: 'italic',
-        type: 'boolean',
-        defaultValue: false,
+        name: 'onClick',
+        type: 'function',
+      },
+      {
+        name: 'text',
+        type: 'string',
+        required: true,
+      },
+      {
+        name: 'type',
+        type: '"submit" | "button"',
+        defaultValue: "button",
       },
     ]}
     heading={false}
@@ -55,17 +47,17 @@ card(
 
 card(
   <Example
-    description="
-    You can apply the following to adjust the positioning of text within wrapper elements.
-  "
-    name="Alignment"
+    description="It's the Primary Button"
+    name="Primary Button"
     defaultCode={`
 <Box maxWidth="8em">
-  <Text align="left">Left (default)</Text>
-  <Text align="right">Right</Text>
-  <Text align="center">Center</Text>
-  <Text align="justify">Justify</Text>
+  <Button text="Click Me" />
+  <Button text="Click Me" disabled />
+  <Button text="Click Me" inline />
+  <Button text="Click Me" inline />
+  <Button text="Submit Me" type="submit" />
 </Box>`}
+    scope={{ Box, Button }}
   />
 )
 
@@ -134,3 +126,4 @@ card(
 )
 
 export default () => <CardPage cards={cards} />
+

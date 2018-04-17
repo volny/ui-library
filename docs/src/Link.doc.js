@@ -25,7 +25,7 @@ card(
     props={[
       {
         name: 'children',
-        type: 'React.Node',
+        type: 'string | \'React.Node\'',
         required: true,
       },
       {
