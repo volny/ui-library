@@ -1,0 +1,28 @@
+.button {
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+.solid {
+  /* composes: noBorder from "../Borders.css"; */
+}
+
+.enabled {
+  /* composes: accessibilityOutline from "../Focus.css"; */
+  /* composes: pointer from "../Cursor.css"; */
+}
+
+.disabled {
+  /* composes: accessibilityOutline from "../Focus.css"; */
+  /* composes: pointer from "../Cursor.css"; */
+}
+
+.block {
+  /* composes: xsCol12 from "../Column.css"; */
+  /* composes: block from "../Layout.css"; */
+}
+
+.inline {
+  /* composes: inlineBlock from "../Layout.css"; */
+}
