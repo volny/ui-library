@@ -7,27 +7,32 @@
 }
 
 .Heading {
-  composes: sansSerif antialiased from "../typography.css";
+  composes: sansSerif fontWeightNormal antialiased from "../typography.css";
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .fontSize1 {
   font-size: var(--font-size-1);
+  composes: darkGrey from "../colors.css"
 }
 
 .fontSize2 {
   font-size: var(--font-size-2);
+  composes: darkGrey from "../colors.css"
 }
 
 .fontSize3 {
   font-size: var(--font-size-3);
+  composes: darkGrey from "../colors.css"
 }
 
 .fontSize4 {
   font-size: var(--font-size-4);
+  composes: darkGrey70 from "../colors.css"
 }
 
 .fontSize5 {
   font-size: var(--font-size-5);
+  composes: darkGrey70 from "../colors.css"
 }
