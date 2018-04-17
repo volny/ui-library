@@ -14,7 +14,7 @@
     "lint:css": "stylelint \"./**/*.css\"",
     "format": "prettier --write \"{.babelrc,.eslintrc,**/*.{js,css,md}}\"",
     "test": "jest",
-    "build": "echo 'No build instructions specified 😢'"
+    "build": "cd docs && yarn run build"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
