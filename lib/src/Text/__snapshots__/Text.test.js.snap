@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text bold creates bold text 1`] = `
+<div
+  className="paragraph leftAlign darkGrey fontWeightBold fontStyleNormal"
+>
+  Text
+</div>
+`;
+
+exports[`Text green adds green color 1`] = `
+<div
+  className="paragraph leftAlign green fontWeightNormal fontStyleNormal"
+>
+  Text
+</div>
+`;
+
+exports[`Text inline creates a span instead of a p 1`] = `
+<span
+  className="paragraph leftAlign darkGrey fontWeightNormal fontStyleNormal"
+>
+  Text
+</span>
+`;
+
+exports[`Text italic creates italic text 1`] = `
+<div
+  className="paragraph leftAlign darkGrey fontWeightNormal fontStyleItalic"
+>
+  Text
+</div>
+`;
+
+exports[`Text renders 1`] = `
+<div
+  className="paragraph leftAlign darkGrey fontWeightNormal fontStyleNormal"
+>
+  Text
+</div>
+`;

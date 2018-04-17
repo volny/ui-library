@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link creates a link tag 1`] = `
+<a
+  className="link block"
+  href="https://example.com"
+  onClick={null}
+  target={null}
+>
+  Link
+</a>
+`;
+
+exports[`Link onClick prop works 1`] = `
+<a
+  className="link block"
+  href={undefined}
+  onClick={[Function]}
+  target={null}
+>
+  Link
+</a>
+`;
+
+exports[`Link target blank works 1`] = `
+<a
+  className="link block"
+  href="https://example.com"
+  onClick={null}
+  target="_blank"
+>
+  Link
+</a>
+`;
