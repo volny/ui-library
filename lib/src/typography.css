@@ -40,18 +40,18 @@
 
 /* alignment */
 
-.alignLeft {
+.leftAlign {
   text-align: left;
 }
 
-.alignRight {
+.rightAlign {
   text-align: right;
 }
 
-.alignCenter {
+.centerAlign {
   text-align: center;
 }
 
-.textJustify {
+.justifyAlign {
   text-align: justify;
 }

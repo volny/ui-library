@@ -1,0 +1,13 @@
+.link {
+  composes: underline from "../typography.css";
+  composes: darkGrey70 from "../colors.css";
+  outline: none;
+}
+
+.link:hover,
+.link:focus {
+  /* TODO: can't compose on pseudoselectors */
+  /* https://github.com/css-modules/css-modules/issues/80 */
+/*   composes: darkGrey from "../colors.css" */
+  color: #373737;
+}
