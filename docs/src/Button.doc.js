@@ -10,7 +10,7 @@ import { Button } from 'lib'
 const cards = []
 const card = c => cards.push(c)
 
-card(<PageHeader name="Button" description="Work in progress" />)
+card(<PageHeader name="Button" description="Work in progress, only Primary Buttons implemented yet" />)
 
 card(
   <PropTable
@@ -51,17 +51,56 @@ card(
 
 card(
   <Example
-    description="Primary Button"
-    name="Primary Button"
+    description="Primary Button can be in a number of different states"
+    name="Primary Button States"
     defaultCode={`
-<Box maxWidth="8em">
-  <Button text="Click Me" />
-  <Button text="I'm disabled" disabled />
-  <Button text="I'm active" active />
-  <Button text="I'm inline" inline />
-  <Button text="I'm inline" inline />
-  <Button text="Submit Me" type="submit" />
+<Box>
+  <Box padding="1">
+    <Button text="Click Me" />
+  </Box>
+  <Box padding="1">
+    <Button text="I'm disabled" disabled />
+  </Box>
+  <Box padding="1">
+    <Button text="I'm active" active/>
+  </Box>
 </Box>`}
+    scope={{ Box, Button }}
+  />
+)
+
+card(
+  <Example
+    description="Buttons can have a block or inline layout"
+    name="Button Layouts"
+    defaultCode={`
+    <Box>
+      <Box padding="1">
+        <Button text="Block" />
+        <Button text="Block" />
+      </Box>
+      <Box padding="1">
+        <Button text="Inline" inline />
+        <Button text="Inline" inline />
+      </Box>
+    </Box>`}
+    scope={{ Box, Button }}
+  />
+)
+
+card(
+  <Example
+    description="Button can perform different actions of click"
+    name="Button Actions"
+    defaultCode={`
+    <Box>
+      <Box padding="1">
+        <Button text="Submit Me" type="submit" />
+      </Box>
+      <Box padding="1">
+        <Button text="Alert Me" onClick={() => {alert('hi')}} />
+      </Box>
+    </Box>`}
     scope={{ Box, Button }}
   />
 )

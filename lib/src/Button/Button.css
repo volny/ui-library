@@ -36,9 +36,9 @@ button[disabled]{
 }
 
 .block {
-  /* TODO */
+  display: block;
 }
 
 .inline {
-  /* TODO */
+  display: inline;
 }
