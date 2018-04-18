@@ -2,7 +2,7 @@
 
 exports[`Heading h1 1`] = `
 <h1
-  className="Heading fontSize1 darkGrey "
+  className="Heading fontSize1 undefined"
 >
   h
 </h1>
@@ -10,7 +10,7 @@ exports[`Heading h1 1`] = `
 
 exports[`Heading h2 1`] = `
 <h2
-  className="Heading fontSize2 darkGrey "
+  className="Heading fontSize2 undefined"
 >
   h
 </h2>

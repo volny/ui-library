@@ -13,26 +13,26 @@
 }
 
 .fontSize1 {
+  composes: darkGrey from "../colors.css";
   font-size: var(--font-size-1);
-  composes: darkGrey from "../colors.css"
 }
 
 .fontSize2 {
+  composes: darkGrey from "../colors.css";
   font-size: var(--font-size-2);
-  composes: darkGrey from "../colors.css"
 }
 
 .fontSize3 {
+  composes: darkGrey from "../colors.css";
   font-size: var(--font-size-3);
-  composes: darkGrey from "../colors.css"
 }
 
 .fontSize4 {
+  composes: darkGrey70 from "../colors.css";
   font-size: var(--font-size-4);
-  composes: darkGrey70 from "../colors.css"
 }
 
 .fontSize5 {
+  composes: darkGrey70 from "../colors.css";
   font-size: var(--font-size-5);
-  composes: darkGrey70 from "../colors.css"
 }
