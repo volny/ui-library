@@ -14,6 +14,8 @@ The project is implemented as a monorepo using [Yarn Workspaces](https://yarnpkg
 
 ## Installation
 
+This project requires `"yarn": "^1.0"`, so please run `yarn --version` to make sure you have a compatible version installed.
+
 * run `yarn` at the project root
 * `yarn start`
 
@@ -65,6 +67,10 @@ we run the version and configuration specified in `dev-dependencies` rather than
 installed globally on your system. Please ensure the those commands pass before committing your code.
 
 You can also attempt auto-format the code by running `yarn run format`. This runs `prettier --write` over the codebase, which can fix many non-ambiguous errors automatically.
+
+## Git hooks
+
+This project uses [pre-commit hooks](https://www.npmjs.com/package/pre-commit) to ensure the linter and tests pass before a commit. If your commit is rejected please run the yarn commands described above and fix potential issues.
 
 ## Development
 
