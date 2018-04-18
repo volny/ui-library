@@ -17,6 +17,11 @@
     "prebuild": "cd lib && yarn build",
     "build": "cd docs && yarn run build"
   },
+  "pre-commit": [
+    "lint:js",
+    "lint:css",
+    "test"
+  ],
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
@@ -48,6 +53,7 @@
     "eslint-plugin-react": "^7.7.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.3",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.3.1",
     "style-loader": "^0.20.3",
